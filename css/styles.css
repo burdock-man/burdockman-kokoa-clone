@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=DynaPuff:wght@400..700&family=Jua&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+
+/* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+body {
+    font-family: "DynaPuff", system-ui;
+    font-weight: 600;
+    /* height: 1000vh; */
+    color: #2e363e;
+}
+
+.main-screen {
+    padding: 0 var(--horizontal-space);
+}

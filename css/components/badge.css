@@ -1,0 +1,61 @@
+.badge {
+    position: relative;
+}
+
+.badge::after {
+    content: "1";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    animation: badgespin 2s ease-in-out infinite;
+}
+
+.text-badge {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+}
+
+.dots-badge {
+    position: relative;
+}
+
+.dots-badge::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: tomato;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+}
+
+@keyframes badgespin {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-5px) rotateY(90deg);
+    }
+    100% {
+        transform: none;
+    }
+}
